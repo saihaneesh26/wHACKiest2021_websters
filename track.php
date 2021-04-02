@@ -4,6 +4,15 @@ session_start();
 $json_file=(file_get_contents('data.json'));
 $json_file=json_decode($json_file,true);
 $len=sizeof($json_file);
+if(isset($_SESSION['lat']))
+{
+	$lat=$_SESSION['lat'];
+}
+if(isset($_SESSION['lon']))
+{
+	$lon=$_SESSION['lon'];
+}
+
 if(isset($_SESSION['inc']))
 {
 	$_SESSION['inc']=$_SESSION['inc'] +1;
@@ -14,7 +23,7 @@ else{
 	$_SESSION['inc']=0;
 	$arval=0;
 }
-$var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].'&output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+$var=('<iframe src="https://maps.google.com/maps?q='.$lat.','.$lon.' &output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
 ?>
 
 
@@ -25,27 +34,41 @@ $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].
 </head>
 <body>
 	<?php include("header.php"); ?>
-	<h1>Vaccination places in banglore</h1>
-	<div style="display: inline-block;">
-	<div id="map" style="float:left; margin:50px; border: 10px solid black; box-shadow: 2px;">
-		<?php  echo($var);?>
+	
+	 
+	<div class="card" style="padding: 10px 1px;">
+  		<div class="card-body">
+		  <h1 class="display-2">Vaccination Places in Banglore</h1>
+  		</div>
 	</div>
-	<input type="text" name="" id="demo">
-	<div id="details" style="float:right; margin-top:50px;">
-<?php
-echo("<p>Hospital name:".$json_file[$arval]['name']."</p>");
-echo("<p>vaccine name:".$json_file[$arval]['vaccine_used']."</p>");
-echo("<p>vaccine price:".$json_file[$arval]['price']."</p>");
-?>
+	<div class="container px-4">
+  		<div class="row gx-5">
+    		<div class="col" style="margin: 20px 20px;">
+					<!---<div style="display: inline-block;">
+					<div id="map" style="float:left; margin:50px; border: 10px solid black; box-shadow: 2px;">-->
+						<?php  echo($var);?>
+					<!--</div>--->
+    		</div>
+    		<div class="col">
+				<div id="details" style="float:right; margin-top:50px;">
+					<?php
+					echo("<p>Hospital name:".$json_file[$arval]['name']."</p>");
+					echo("<p>vaccine name:".$json_file[$arval]['vaccine_used']."</p>");
+					echo("<p>vaccine price:".$json_file[$arval]['price']."</p>");
+					?>
 
-<form action="track.php" method="post">
-	<input type="submit" class="btn btn-info" name="next" value="Next place">
-</form>
-</div>
-</div>
+					<form action="track.php" method="post">
+						<input type="submit" class="btn btn-info" name="next" value="Next place">
+					</form>
+				</div>
+    		</div>
+  		</div>
+	</div>
 </body>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+
 <script>
-var x = document.getElementById("demo");
+var lat,lon;
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -55,10 +78,35 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+
+$.ajax({url:"location.php",data:{lat:position.coords.latitude,lon:position.coords.longitude},method:"post",dataType:"text",success:function(data)
+			{
+				
+			}
+			});
+ lat=position.coords.latitude;
+	 lon=position.coords.longitude;
+
+var p1 = new google.maps.LatLng(lat,lon);
+var p2 = new google.maps.LatLng(17.4122998,78.2679585);
+
+//alert(calcDistance(p1, p2));
+
+//calculates distance between two points in km's
+function calcDistance(p1, p2) {
+  return (google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
 }
+var x = document.getElementById("demo");
+x.innerHTML=calcDistance(p1,p2);
+
+}
+
+	getLocation();
+
 
 </script>
 </html>
 <!--
+('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].'&output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+
+17.4122998,78.2679585
