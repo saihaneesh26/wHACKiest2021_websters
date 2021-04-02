@@ -72,9 +72,11 @@
       }
     </script>
   </head>
-  <body>
+  <body style="background-image:url();background-color: black;background-size: cover;background-position:center;background-repeat: no-repeat;">
     <?php include "header.php" ?>
-    <div id="curve_chart" style="width: 700px; height: 500px;margin:0;padding:0"></div>
-<div id="ncurve_chart" style="width: 700px; height: 500px;margin:0;padding:0"> </div>
+    <div style="background-color: black;opacity: 70%;background-color: transparent;">
+    <div id="curve_chart" style="width: 700px; height: 500px ;float:left;padding:0;margin-top:100px"></div>
+<div id="ncurve_chart" style="width: 700px; height: 500px; float: right;padding: 0;margin-top:100px"> </div>
+<div>
 </body>
 </html>
