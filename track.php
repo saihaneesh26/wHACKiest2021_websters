@@ -44,6 +44,6 @@ echo("<h2>vaccine price:".$json_file[$arval]['price']."</h2>");
 <form action="track.php" method="post">
 	<input type="submit" name="next" value="Next place">
 </form>
-
+</div>
 </body>
 </html>
