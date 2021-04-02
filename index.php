@@ -74,7 +74,7 @@
   </head>
   <body>
     <?php include "header.php" ?>
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
-<div id="ncurve_chart" style="width: 900px; height: 500px"> </div>
+    <div id="curve_chart" style="width: 700px; height: 500px;margin:0;padding:0"></div>
+<div id="ncurve_chart" style="width: 700px; height: 500px;margin:0;padding:0"> </div>
 </body>
 </html>
