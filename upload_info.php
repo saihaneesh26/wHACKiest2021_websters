@@ -28,12 +28,13 @@ if(isset($_SESSION['success']))
 	unset($_SESSION['success']);
 }
 ?>
+	<div id="form>
 <form action="upload_info.php" method="post">
 	<h2>Name of hospital:</h2><input type="text" name="name">
 	<h2>vaccine name:</h2><input type="text" name="vaccine_used">
 	<h2>price of vaccine:</h2><input type="text" name="price">
 	<input type="submit" name="add">
 </form>
-
+</div>
 </body>
 </html>
