@@ -21,14 +21,17 @@ if(isset($_POST['add']))
 	<title>upload the info</title>
 </head>
 <body>
+
 	<?php
+	include 'header.php';
 if(isset($_SESSION['success']))
 {
 	echo($_SESSION['success']);
 	unset($_SESSION['success']);
 }
 ?>
-	<div id="form>
+
+<div id="form">
 <form action="upload_info.php" method="post">
 	<h2>Name of hospital:</h2><input type="text" name="name">
 	<h2>vaccine name:</h2><input type="text" name="vaccine_used">

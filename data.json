@@ -1,0 +1,10 @@
+[
+	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"100"},
+	{"name":"Dhanush Hospital karnataka","vaccine_used":"B","price":"200"},
+	{"name":"KIMS Hospital & Research Centre karnataka","vaccine_used":"C","price":"300"},
+	{"name":"Mallya Hospital karnataka","vaccine_used":"A","price":"400"},
+	{"name":"Narayana Hrudayalaya karnataka","vaccine_used":"A","price":"500"},
+	{"name":"M S Kerudi Hospital And Research Centre Bagalkot karnataka ","vaccine_used":"C","price":"900"},
+	{"name":"M S Ramaiah Hospital banglore karnataka","vaccine_used":"B","price":"700"},
+	{"name":"M S Ramaiah Narayana Heart Centre karnataka","vaccine_used":"A","price":"400"}
+]
