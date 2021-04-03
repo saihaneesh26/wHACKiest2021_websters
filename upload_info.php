@@ -5,10 +5,12 @@ if(isset($_POST['add']))
 	$name=$_POST['name'];
 	$vaccine=$_POST['vaccine_used'];
 	$price=$_POST['price'];
+	$lat=$_POST['lat'];
+	$lon=$_POST['lon'];
 	$json_file=(file_get_contents('data.json'));
 	$json_file=json_decode($json_file,true);
 	$len=sizeof($json_file);
-	array_push($json_file,["name"=>$name,"vaccine_used"=>$vaccine,"price"=>$price]);
+	array_push($json_file,["name"=>$name,"vaccine_used"=>$vaccine,"price"=>$price,"lat"=>$lat,"lon"=>$lon]);
 	$final=json_encode($json_file);
 	 file_put_contents('data.json', $final);	
 	 $_SESSION['success']="done";
@@ -39,7 +41,7 @@ if(isset($_SESSION['success']))
 				<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
 				<form class="form"method="POST" action="placeremainder.php">
 					<div class="form-group">
-                        <label for="name" style="color:coral">Name of hospital:</label>
+                        <label for="name" style="color:coral">Name of hospital</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
@@ -49,8 +51,16 @@ if(isset($_SESSION['success']))
                     </div>
 					
 					<div class="form-group">
-  						<label for="price" style="color:coral">price of vaccine:</label>
+  						<label for="price" style="color:coral">price of vaccine</label>
     					<input class="form-control" type="text"  name="price" id="price" style="height:30px margin-block: 1rem;">
+					</div>
+					<div class="form-group">
+  						<label for="lat" style="color:coral">latitiude</label>
+    					<input class="form-control" type="text"  name="lat" style="height:30px margin-block: 1rem;">
+					</div>
+					<div class="form-group">
+  						<label for="lon" style="color:coral">longitude</label>
+    					<input class="form-control" type="text"  name="lon"style="height:30px margin-block: 1rem;">
 					</div>
 
 					<div class="row">
