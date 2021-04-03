@@ -33,7 +33,7 @@ border-radius: 30px;
 }
 .pagebody{
     position: absolute;
-    width: 100%;
+
     height: 100vh;
     
 /* background: rgb(2,0,36);
@@ -42,20 +42,15 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
 }
 .navbar{
     background-color: lightblue !important;
-    /* height: 100px !important; */
+    height: 100px !important;
     border-radius: 20px;
 
 }
-.textmessage{
-    width : 1005;
-}
+
 .textmessage>h1{
     display: flex;
     justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
     font-weight: 600;
-    text-shadow: 2px 2px  black;
 }
 
 .image > img{
@@ -73,19 +68,22 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
     margin: 30px;
     display: inline-block;
     position :relative;
-    width: auto;
-    left: 10%;
+    width: 400px;
+    left: 20%;
     top: 50px;
     box-shadow: 10px 10px 20px;
 }
-
+.righty >img{
+    width: 500px;
+}
  .info-r{
     display: inline-block;
     position: relative;
     background: white;
     box-shadow: 7px 7px 20px 5px;
     padding: 2em;
-    left: 20%;
+    top: 30%;
+    left: 30%;
     width: 600px;
 }
 
@@ -101,17 +99,9 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
 
 .textmessage{
     padding: 20px;
-    margin:20px;
-    height: auto;
-    width: fit-content;
-    background-color: #ffc93c;
-    box-shadow: 7px 7px 7px 7px;
-    
-    opacity: 70%;
-    position: relative;
-    left: 42%;
-    right: 40%;
-    
+
+    font-family: 'Roboto Mono', monospace;
+    display: hidden;
 }
 .nav:hover{
     background-color: white;
@@ -120,12 +110,8 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
 }
 
 .spacers{
-    position: relative;
-    display: inline-block;
     padding: 20px;
     margin: 10px;
-    width : 100%;
-    height:100px;
 
 }
 
@@ -145,105 +131,4 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
 .nav-link:focus{
     cursor: pointer;
     outline-offset: 3px;
-}
-.navbar-brand{
-    font-weight:900;
-    color :red;
-}
-.card-body{
-    margin: 10px;
-    margin-bottom: 35px;
-    padding : 10px;
-    background: cornsilk;
-    box-shadow: 7px 7px 9px 2px;
-}
-.card-body>h1{
-    display: flex;
-    justify-content: center;
-}
-.mapy{
-    position: relative;
-    margin: 10px;
-    padding :2px;
-    top: 30px;
-}
-.content1 > .header1{
-    height: auto;
-    width:fit-content;
-    margin: 10px;
-    padding: 10px;
-    top:40px;
-    position: relative;
-    display: inline-block;
-    background: white; 
-    box-shadow: 7px 7px 9px 2px;
-
-}
-.header1 > h1{
-    font-weight:700;
-}
-.content1> .para1{
-    height: auto;
-    width: 1000px;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    background: white; 
-    box-shadow: 7px 7px 9px 2px;
-    top: 70px;
-    left: 130px;
-    border-radius: 20px;
-}
-.content2 > .header2{
-    height: auto;
-    width:fit-content;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    background: white; 
-    box-shadow: 7px 7px 9px 2px;
-
-}
-.header2 > h1{
-    font-weight:700;
-}
-.content2> .para2{
-    height: auto;
-    width: 1000px;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    display: inline-block;
-    background: white; 
-    box-shadow: 7px 7px 9px 2px;
-    top: 100px;
-    left: 50px;
-    border-radius: 20px;
-}
-.tablehead{
-    width: fit-content;
-    height:auto;
-    background: yellow;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 7px 7px 9px 2px;
-    border-radius: 20px;
-}
-.tablehead>h4{
-    font-weight: 700;
-}
-.heading4{
-    display: inline-block;
-    width: fit-content;
-    background: yellow;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 7px 7px 9px 2px;
-    border-radius: 20px;
-}
-.heading4> h4{
-    font-weight: 700;
 }
