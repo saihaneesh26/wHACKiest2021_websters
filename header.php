@@ -81,6 +81,16 @@
     {
       alert("CODERIT ki Jai!!!☺");
     }
+      if(temp=="REMINDER")
+    {
+      var r=confirm("Want a Reminder!!");
+      if(r==true)
+      {
+window.location="placeremainder.php";
+      }
+      else{
+
+      }
   });
 
 </script>
