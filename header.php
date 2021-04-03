@@ -49,7 +49,7 @@
               <a class="nav-link active"  href="placeremainder.php">Reminder</a>
             </li>
             <li class="nav" >
-              <a class="nav-link active"  href="about.php">About Us</a>
+              <a class="nav-link active"  href="about.php">About</a>
             </li>
           </ul>
         </div>
