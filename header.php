@@ -27,7 +27,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: gray">
       <div class="container-fluid">  
-        <img src="favicon.jpeg" style="width:70px;">
+        <img src="favicon.jpeg" style="width:70px;background-color: transparent;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,6 +47,9 @@
             </li>
             <li class="nav" >
               <a class="nav-link active"  href="placeremainder.php">Reminder</a>
+            </li>
+            <li class="nav" >
+              <a class="nav-link active"  href="about.php">About Us</a>
             </li>
           </ul>
         </div>
