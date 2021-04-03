@@ -8,17 +8,17 @@ $date=(date("Y-m-d"));
 //print_r($json[0]);
 foreach($json as $row)
 {
-	print_r($row);
-	
+	if($orw['remdate]==$date){	
 		$email=$row['email'];
 		$subject="remainder";
 		$headers = 'From: designprjct19@gmail.com' . "\r\n". 
 		  'Reply-To: designprjct19@gmail.com' . "\r\n" . 
 		  'X-Mailer: PHP/' . phpversion();
-		$message= "remainder for the second dose of vaccination";	mail($email,$subject,$message,$headers);
+		$message= "remainder for the second dose of vaccination";	
+		mail($email,$subject,$message,$headers);
 		
 		echo("done");
-	
+	}
 
 }
 // $email="designprjct19@gmail.com";
