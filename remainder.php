@@ -9,8 +9,7 @@ $date=(date("Y-m-d"));
 foreach($json as $row)
 {
 	print_r($row);
-	if($date==$row['remdate'])
-	{
+	
 		$email=$row['email'];
 		$subject="remainder";
 		$headers = 'From: designprjct19@gmail.com' . "\r\n". 
@@ -19,7 +18,7 @@ foreach($json as $row)
 		$message= "remainder for the second dose of vaccination";	mail($email,$subject,$message,$headers);
 		
 		echo("done");
-	}
+	
 
 }
 // $email="designprjct19@gmail.com";
