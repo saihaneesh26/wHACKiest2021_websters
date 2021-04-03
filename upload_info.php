@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_POST['add'])&&strlen($_POST['name'])>0&&strlen($_POST['vaccine_used'])>0&&strlen($_POST['price'])>0&&strlen($_POST['lat'])>0&&strlen($_POST['lon'])>0)
+if(isset($_POST['add']))
 {
 	$name=$_POST['name'];
 	$vaccine=$_POST['vaccine_used'];
@@ -25,6 +25,7 @@ else{
 <head>
 <link rel="stylesheet" href="./style.css">
 	<title>upload the info</title>
+	<link rel="icon" href="favicon.ico" type="image/ico" >
 </head>
 <body>
 
@@ -36,9 +37,11 @@ else{
 
 <div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
-			<div class="col-12" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
-			<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>	
-			<form class="form"method="POST" action="placeremainder.php">
+			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
+			<div class="tablehead">	
+			<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
+			</div>	
+			<form class="form"method="POST" action="upload_info.php">
 					<?php
 						if(isset($_SESSION['fail']))
 						{
@@ -52,25 +55,25 @@ else{
 						}
 					 ?>
 					<div class="form-group">
-                        <label for="name" style="color:coral" class="text-center">Name of Hospital:</label>
+                        <label for="name" style="color:coral">Name of hospital</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-                        <label for="vaccine_used"style="color:coral">Vaccine Name:</label>
+                        <label for="vaccine_used"style="color:coral">vaccine name</label>
                         <input type="text" class="form-control" name="vaccine_used" id="email" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-  						<label for="price" style="color:coral">Price Of Vaccine:</label>
+  						<label for="price" style="color:coral">price of vaccine</label>
     					<input class="form-control" type="text"  name="price" id="price" style="height:30px margin-block: 1rem;">
 					</div>
 					<div class="form-group">
-  						<label for="lat" style="color:coral">Latitiude:</label>
+  						<label for="lat" style="color:coral">latitiude</label>
     					<input class="form-control" type="text"  name="lat" style="height:30px margin-block: 1rem;">
 					</div>
 					<div class="form-group">
-  						<label for="lon" style="color:coral">Longitude:</label>
+  						<label for="lon" style="color:coral">longitude</label>
     					<input class="form-control" type="text"  name="lon"style="height:30px margin-block: 1rem;">
 					</div>
 
