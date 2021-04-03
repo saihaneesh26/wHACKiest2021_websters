@@ -6,7 +6,7 @@
 	<title>Track Centres</title>
 </head>
 <body>
-	<footer id="footer">&copy codeRIT-wHACKiest2021-websters <span style="font-size:5px;" >The content may be inaccurate</span></footer>
+	<footer id="footer">&copy codeRIT-wHACKiest2021-websters <span style="font-size:10px;" >The content here may be inaccurate</span></footer>
 </body>
 </html>
 <style type="text/css">
