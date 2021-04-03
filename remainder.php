@@ -8,6 +8,7 @@ $date=(date("Y-m-d"));
 //print_r($json[0]);
 foreach($json as $row)
 {
+	print_r($row);
 	if($orw['remdate]==$date){	
 		$email=$row['email'];
 		$subject="remainder";
