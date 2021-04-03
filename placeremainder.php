@@ -9,7 +9,7 @@ if(isset($_POST['submit'])&&strlen($_POST['name'])>0&&strlen($_POST['email'])>0&
 	$email=$_POST['email'];
 	$date=$_POST['date'];
 	$remdate=date('Y-m-d', strtotime($date. ' + 28 days'));
-	array_push($json_file,["name"=>$name,"email"=>$email,"date"=>$date,"remdate"=>$remdate,'status'=>"true"]);
+	array_push($json_file,["name"=>$name,"email"=>$email,"date"=>$date,"remdate"=>$remdate]);
 	$t=json_encode($json_file);
 	file_put_contents("users.json", $t);
 	echo($remdate);
@@ -30,10 +30,9 @@ else{
 	<?php include("header.php"); ?>
 	<div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
-			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
-
-				Get Remainder after 28days for second dose
-
+			<div class="col-12" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
+				<h4 style="padding-bottom:10px;">Wanna Get A Reminder after 28 days for second dose!!
+				Fill The Form</h4>
 				<form class="form" method="POST" action="placeremainder.php">
 					
 					<?php
@@ -51,18 +50,18 @@ else{
 
 					 ?>					
 					<div class="form-group">
-                        <label for="name" style="color:coral">Name</label>
+                        <label for="name" style="color:coral;margin-left: 50%;">Name</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-                        <label for="email"style="color:coral">E-Mail</label>
+                        <label for="email"style="color:coral;margin-left: 50%;">E-Mail</label>
                         <input type="text" class="form-control" name="email" id="email" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-  						<label for="date" style="color:coral">Date of 1st Vaccine taken</label>
-    					<input class="form-control" type="date" value="2021-10-04" name="date" id="date" style="height:30px margin-block: 1rem;">
+  						<label for="date" style="color:coral;margin-left: 50%;">Date</label>
+    					<input class="form-control" type="date" value="Of First Vaccine" name="date" id="date" style="height:30px margin-block: 1rem;">
 					</div>
 
 					<div class="row">
