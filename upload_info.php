@@ -38,9 +38,9 @@ else{
 <div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
 			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
-			<div class="tablehead">	
-			<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
-			</div>	
+		
+			<h4>Enter the vaccination center info</h4>
+			
 			<form class="form"method="POST" action="upload_info.php">
 					<?php
 						if(isset($_SESSION['fail']))
