@@ -26,20 +26,20 @@ if(isset($_POST['submit']))
 	
 	<div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
-			<div class="col-6" style="text-align: center;margin: 1rem auto;">
-				<form method="POST" action="placeremainder.php">
+			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
+				<form class="form" method="POST" action="placeremainder.php">
 					<div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name" style="color:coral">Name</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input type="email" class="form-control" name="email" id="email" style="height:30px margin-block: 1rem;">
+                        <label for="email"style="color:coral">E-Mail</label>
+                        <input type="text" class="form-control" name="email" id="email" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-  						<label for="date" >Date</label>
+  						<label for="date" style="color:coral">Date</label>
     					<input class="form-control" type="date" value="2021-10-04" name="date" id="date" style="height:30px margin-block: 1rem;">
 					</div>
 

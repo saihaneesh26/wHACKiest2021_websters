@@ -1,0 +1,42 @@
+.form{
+	background-color:black;
+	opacity: 78%; 
+	box-sizing: border-box;
+	color:white;
+	height:auto;
+	text-align:left;
+	padding:50px 30px; 
+	margin-top:0;
+	border-radius: 10px;
+}
+.form a{
+	text-decoration-line: none;
+	color: white;
+
+}
+.form input{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+.form input[type="text"],input[type="email"],input[type="password"]{
+	border:none;
+	border-bottom:1px solid white;
+	background:transparent;
+	outline: none;
+	color: white;
+	font:30px;
+	cursor: context-menu;
+}
+.form input[type="submit"]{
+	border:none;
+	color:white;
+	background-color: orange;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.form input[type="date"]{
+	color:black;
+	background-color: none;
+	border-radius:20px;  
+}

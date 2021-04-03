@@ -31,13 +31,40 @@ if(isset($_SESSION['success']))
 }
 ?>
 
-<div id="form">
-<form action="upload_info.php" method="post">
-	<h2>Name of hospital:</h2><input type="text" name="name">
-	<h2>vaccine name:</h2><input type="text" name="vaccine_used">
-	<h2>price of vaccine:</h2><input type="text" name="price">
-	<input type="submit" name="add">
-</form>
-</div>
+
+
+<div class="container-fluid" style="margin: 2rem auto;">
+		<div class="row">
+			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
+				<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
+				<form class="form"method="POST" action="placeremainder.php">
+					<div class="form-group">
+                        <label for="name" style="color:coral">Name of hospital:</label>
+                        <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
+                    </div>
+					
+					<div class="form-group">
+                        <label for="vaccine_used"style="color:coral">vaccine name</label>
+                        <input type="text" class="form-control" name="vaccine_used" id="email" style="height:30px margin-block: 1rem;">
+                    </div>
+					
+					<div class="form-group">
+  						<label for="price" style="color:coral">price of vaccine:</label>
+    					<input class="form-control" type="text"  name="price" id="price" style="height:30px margin-block: 1rem;">
+					</div>
+
+					<div class="row">
+                        <div class="col-6" style="margin: 1rem auto;display: block;text-align: center;">
+                            <input class="btn btn-primary" type="submit" name="add">
+                        </div>
+                    </div>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+
 </body>
 </html>

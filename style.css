@@ -89,3 +89,9 @@ border-radius: 30px;
 .navbar{
     background-color: #C4C4C4;
 }
+.nav:hover{
+    background-color: white;
+    color:coral;
+    transition: 0.1s;
+}
+
