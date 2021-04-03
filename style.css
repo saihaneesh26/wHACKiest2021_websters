@@ -134,10 +134,8 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(
     font-size: 15px;
     font-weight: 600;
     font-style: italic;
-    outline: 2px solid black;
     padding: 2px;
     margin: 6px;
-    border: 2px solid black;
     outline-offset: -2px;
     transition: outline-offset 900ms ease;
 }
