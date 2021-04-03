@@ -45,9 +45,7 @@
             <li class="nav" >
               <a class="nav-link active"  href="upload_info.php">Add Vaccination centers</a>
             </li>
-            <li class="nav" >
-              <a class="nav-link active" href="vaccine.php">About Vaccine</a>
-            </li>
+            
             <li class="nav" >
               <a class="nav-link active"  href="placeremainder.php">Reminder</a>
             </li>
