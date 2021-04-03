@@ -23,6 +23,7 @@ else{
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="./style.css">
 	<title>place remainder</title>
 </head>
 <body>
@@ -30,7 +31,9 @@ else{
 	<div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
 			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
+			<div class="heading4">
 				<h4 style="margin-bottom: 10px;margin-left: 70px">Get Remainder after 28days for second dose</h4>
+				</div>
 				<form class="form" method="POST" action="placeremainder.php">
 					
 					<?php

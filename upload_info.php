@@ -16,13 +16,14 @@ if(isset($_POST['add'])&&strlen($_POST['name'])>0&&strlen($_POST['vaccine_used']
 	 $_SESSION['suc']="done";
 }
 else{
-	$_SESSION['fail']="enter details";
+	$_SESSION['fail']="Enter Details";
 }
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="./style.css">
 	<title>upload the info</title>
 </head>
 <body>
@@ -36,8 +37,10 @@ else{
 <div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
 			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
-				<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
-				<form class="form"method="POST" action="placeremainder.php">
+			<div class="tablehead">	
+			<h4 style="padding-bottom:10px;">Enter the vaccination center info</h4>
+			</div>	
+			<form class="form"method="POST" action="placeremainder.php">
 					<?php
 						if(isset($_SESSION['fail']))
 						{

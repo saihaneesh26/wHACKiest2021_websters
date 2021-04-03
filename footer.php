@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Track Centres</title>
 </head>
 <body>
 	<footer id="footer">&copy codeRIT-wHACKiest2021-websters</footer>
@@ -11,9 +11,13 @@
 </html>
 <style type="text/css">
 	#footer{
-		position: sticky ;
+		position: fixed;
+		width: 100%;
+		display: inline-block;
 		bottom:0px;
-		font:5px; color:coral;
+		height: 40px;
+		font:5px; color:black;
+		font-weight: 600;
 		background-color: lightgray;opacity: 70%;
 	}
 </style>
