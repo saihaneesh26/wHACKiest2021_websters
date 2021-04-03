@@ -37,7 +37,7 @@ else{
 
 <div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
-			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
+			<div class="col-12" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding-top:20px;">
 		
 			<h4>Enter the vaccination center info</h4>
 			
