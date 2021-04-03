@@ -34,9 +34,9 @@ else if(isset($_POST['prev']))
 }
 //echo($json_file[0]['lat']);
 	$lat=($json_file[$arval]['lat']);
-	setcookie("lat1",$lat);
+	//setcookie("lat1",$lat);
 	$lon=$json_file[$arval]['lon'];
-	setcookie("lon1",$lon);
+	//setcookie("lon1",$lon);
 $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].' &output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
 ?>
 
