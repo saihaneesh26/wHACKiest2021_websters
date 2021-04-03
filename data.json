@@ -1,5 +1,5 @@
 [
-	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"100"},
+	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"100","lat":"17.4122998","lon":"78.2679585"},
 	{"name":"Dhanush Hospital karnataka","vaccine_used":"B","price":"200"},
 	{"name":"KIMS Hospital & Research Centre karnataka","vaccine_used":"C","price":"300"},
 	{"name":"Mallya Hospital karnataka","vaccine_used":"A","price":"400"},

@@ -22,14 +22,38 @@ if(isset($_POST['submit']))
 	<title>place remainder</title>
 </head>
 <body>
-		<?php include("header.php"); ?>
-	<div>
-	<form method="POST" action="placeremainder.php">
-		<h2>Name:</h2><input type="text" name="name">
-		<h2>email:</h2><input type="email" name="email">
-		<h2>date of 1st vaccine:</h2><input type="text" name="date" placeholder="yyyy-mm-dd">
-		<input type="submit" name="submit">
-	</form>
+	<?php include("header.php"); ?>
+	
+	<div class="container-fluid" style="margin: 2rem auto;">
+		<div class="row">
+			<div class="col-6" style="text-align: center;margin: 1rem auto;">
+				<form method="POST" action="placeremainder.php">
+					<div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
+                    </div>
+					
+					<div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" class="form-control" name="email" id="email" style="height:30px margin-block: 1rem;">
+                    </div>
+					
+					<div class="form-group">
+  						<label for="date" >Date</label>
+    					<input class="form-control" type="date" value="2021-10-04" name="date" id="date" style="height:30px margin-block: 1rem;">
+					</div>
+
+					<div class="row">
+                        <div class="col-6" style="margin: 1rem auto;display: block;text-align: center;">
+                            <input class="btn btn-primary" type="submit" name="submit">
+                        </div>
+                    </div>
+
+					
+				</form>
+			</div>
+		</div>
 	</div>
+
 </body>
 </html>

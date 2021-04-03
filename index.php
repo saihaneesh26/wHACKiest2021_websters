@@ -71,12 +71,27 @@
         chart.draw(data, options);
       }
     </script>
+    <!-- Required meta tags -->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
   </head>
+
+
   <body style="background-image:url();background-color: black;background-size: cover;background-position:center;background-repeat: no-repeat;">
-    <?php include "header.php" ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+    <?php include "header.php" ?>   
     <div style="background-color: black;opacity: 70%;background-color: transparent;">
-    <div id="curve_chart" style="width: 700px; height: 500px ;float:left;padding:0;margin-top:100px"></div>
-<div id="ncurve_chart" style="width: 700px; height: 500px; float: right;padding: 0;margin-top:100px"> </div>
+    <div class = "container-fluid">
+      <div id="curve_chart" style="width: 700px; height: 500px ;float:left;padding:0;margin-top:100px"></div>
+    </div>
+    <div class = "container-fluid">
+      <div id="ncurve_chart" style="width: 700px; height: 500px; float: right;padding: 0;margin-top:100px"> </div>
+    </div>
 <div>
 </body>
 </html>
