@@ -86,7 +86,7 @@
       var r=confirm("Want a Reminder!!");
       if(r==true)
       {
-window.location="placeremainder.php";
+window.location="https://vaccinaid.herokuapp.com/placeremainder.php";
       }
       else{
 
