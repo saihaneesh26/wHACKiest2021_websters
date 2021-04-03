@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_POST['add']))
+if(isset($_POST['add'])&&strlen($_POST['name'])>0&&strlen($_POST['lat'])>0&&strlen($_POST['lon'])>0&&strlen($_POST['price'])>0&&strlen($_POST['vaccine'])>0)
 {
 	$name=$_POST['name'];
 	$vaccine=$_POST['vaccine_used'];
