@@ -61,7 +61,7 @@ else{
 					
 					<div class="form-group">
   						<label for="date" style="color:coral;margin-left: 50%;">Date</label>
-    					<input class="form-control" type="date" value="Of First Vaccine" name="date" id="date" style="height:30px margin-block: 1rem;">
+    					<input class="form-control" type="date" value="2010-10-07" name="date" id="date" style="height:30px margin-block: 1rem;">
 					</div>
 
 					<div class="row">
