@@ -17,6 +17,7 @@ foreach($json as $row)
 		  'X-Mailer: PHP/' . phpversion();
 		$message= "remainder for the second dose of vaccination";
 	//	mail($email,$subject,$message,$headers);
+		
 		echo("done");
 	}
 
