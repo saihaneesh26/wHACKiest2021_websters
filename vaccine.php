@@ -34,5 +34,7 @@ include 'header.php';
 			They are our most effective health intervention. Vaccines prevent an estimated 2–3 million deaths worldwide every year. But, a further 1.5 million lives could be saved annually with better global vaccine coverage</p>
 		</div>
 	</div>
+	<?php include "footer.php"  ?>
+
 </body>
 </html>

@@ -35,13 +35,8 @@ else if(isset($_POST['prev']))
 //echo($json_file[0]['lat']);
 	$lat=($json_file[$arval]['lat']);
 	setcookie("lat1",$lat);
-	print_r($lat);
-
 	$lon=$json_file[$arval]['lon'];
 	setcookie("lon1",$lon);
-	print_r($lon);
-
-
 $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].' &output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
 ?>
 
@@ -84,6 +79,9 @@ $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].
     		</div>
   		</div>
 	</div>
+	<div>
+  <?php include 'footer.php'; ?>
+</div>
 </body>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
 

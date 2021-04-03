@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_POST['submit']))
+if(isset($_POST['submit'])&&strlen($_POST['name'])>0&&strlen($_POST['email'])>0&&strlen($_POST['date'])>0)
 {
 	$json_file=(file_get_contents('users.json'));
 	$json_file=json_decode($json_file,true);
@@ -13,6 +13,10 @@ if(isset($_POST['submit']))
 	$t=json_encode($json_file);
 	file_put_contents("users.json", $t);
 	echo($remdate);
+	$_SESSION['suc']="added successfully";
+}
+else{
+	$_SESSION['fail']="enter details";
 }
 
 ?>
@@ -23,11 +27,26 @@ if(isset($_POST['submit']))
 </head>
 <body>
 	<?php include("header.php"); ?>
-	
 	<div class="container-fluid" style="margin: 2rem auto;">
 		<div class="row">
 			<div class="col-6" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
+				<h4 style="margin-bottom: 10px;margin-left: 70px">Get Remainder after 28days for second dose</h4>
 				<form class="form" method="POST" action="placeremainder.php">
+					
+					<?php
+						if(isset($_SESSION['fail']))
+						{
+							echo("<p style='color:red;'>".$_SESSION['fail']."</p>");
+								unset($_SESSION['fail']);
+						}
+						else if(isset($_SESSION['suc']))
+						{
+							echo("<p style='color:green;'>".$_SESSION['suc']."</p>");
+								unset($_SESSION['suc']);
+						}
+
+
+					 ?>					
 					<div class="form-group">
                         <label for="name" style="color:coral">Name</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
@@ -39,7 +58,7 @@ if(isset($_POST['submit']))
                     </div>
 					
 					<div class="form-group">
-  						<label for="date" style="color:coral">Date</label>
+  						<label for="date" style="color:coral">Date of 1st Vaccine taken</label>
     					<input class="form-control" type="date" value="2021-10-04" name="date" id="date" style="height:30px margin-block: 1rem;">
 					</div>
 
@@ -54,6 +73,7 @@ if(isset($_POST['submit']))
 			</div>
 		</div>
 	</div>
+<?php include "footer.php"  ?>
 
 </body>
 </html>
