@@ -5,9 +5,9 @@ if(isset($_POST['submit'])&&strlen($_POST['name'])>0&&strlen($_POST['email'])>0&
 	$json_file=(file_get_contents('users.json'));
 	$json_file=json_decode($json_file,true);
 	$len=sizeof($json_file);
-	$name=$_POST['name'];
-	$email=$_POST['email'];
-	$date=$_POST['date'];
+	$name=htmlentities($_POST['name']);
+	$email=htmlentities($_POST['email']);
+	$date=htmlentities($_POST['date']);
 	$remdate=date('Y-m-d', strtotime($date. ' + 28 days'));
 	array_push($json_file,["name"=>$name,"email"=>$email,"date"=>$date,"remdate"=>$remdate]);
 	$t=json_encode($json_file);
