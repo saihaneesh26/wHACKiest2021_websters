@@ -2,11 +2,11 @@
 session_start();
 if(isset($_POST['add'])&&strlen($_POST['name'])>0&&strlen($_POST['lat'])>0&&strlen($_POST['lon'])>0&&strlen($_POST['price'])>0&&strlen($_POST['vaccine'])>0)
 {
-	$name=$_POST['name'];
-	$vaccine=$_POST['vaccine_used'];
-	$price=$_POST['price'];
-	$lat=$_POST['lat'];
-	$lon=$_POST['lon'];
+	$name=htmlentities($_POST['name']);
+	$vaccine=htmlentities($_POST['vaccine_used']);
+	$price=htmlentities($_POST['price']);
+	$lat=htmlentities($_POST['lat']);
+	$lon=htmlentities($_POST['lon']);
 	$json_file=(file_get_contents('data.json'));
 	$json_file=json_decode($json_file,true);
 	$len=sizeof($json_file);
