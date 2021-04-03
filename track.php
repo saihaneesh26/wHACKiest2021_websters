@@ -86,7 +86,7 @@ $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].
   <?php include 'footer.php'; ?>
 </div>
 </body>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
 
 <script>
 var lat,lon,lat1,lon1;
