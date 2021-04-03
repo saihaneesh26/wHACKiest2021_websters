@@ -14,8 +14,8 @@ if(isset($_POST['next']))
 	}
 
 	else{
-		$_SESSION['inc']=0;
-		$arval=0;
+		$_SESSION['inc']=1;
+		$arval=1;
 	}
 }
 
