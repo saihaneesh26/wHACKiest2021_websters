@@ -16,8 +16,7 @@ foreach($json as $row)
 		$headers = 'From: designprjct19@gmail.com' . "\r\n". 
 		  'Reply-To: designprjct19@gmail.com' . "\r\n" . 
 		  'X-Mailer: PHP/' . phpversion();
-		$message= "remainder for the second dose of vaccination";
-	//	mail($email,$subject,$message,$headers);
+		$message= "remainder for the second dose of vaccination";	mail($email,$subject,$message,$headers);
 		
 		echo("done");
 	}
