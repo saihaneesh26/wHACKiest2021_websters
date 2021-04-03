@@ -64,5 +64,29 @@ function (){
 $.ajax({url:remainder.php});
 },1000000);
 </script>
+    <script type="text/javascript">
+  var temp="",str,last;
+  document.addEventListener('mousedown',e=>{
+    str+="";
+  });
+  window.addEventListener('keydown',e=>{
+    str=e.code;
+    last=str.charAt(str.length-1);
+    temp+=last;
+    if(temp==="COVID")
+    {
+      alert("Get Vaccinated Fast!!!");
+    }
+    if(temp=="WEBStERS")
+    {
+      alert("Ya, this is WEBSTERS ☻☻♥♣");
+    }
+    if(temp=="CODERIt")
+    {
+      alert("CODERIT ki Jai!!!☺");
+    }
+  });
+
+</script>
 </html>
 
