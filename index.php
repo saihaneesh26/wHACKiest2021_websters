@@ -2,6 +2,7 @@
 <html>
   <html>
   <head> 
+    <title>vaccinaid</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
