@@ -47,7 +47,7 @@
             </li>
             
             <li class="nav" >
-              <a class="nav-link active"  href="placeremainder.php">Reminder</a>
+              <a class="nav-link active"  href="placereminder.php">Reminder</a>
             </li>
             <li class="nav" >
               <a class="nav-link active"  href="about.php">About Us</a>
