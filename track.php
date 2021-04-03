@@ -69,9 +69,9 @@ $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].
 					<?php
 					echo ("<p style='color:blue'>".$_SESSION['location']."</p>");
 					
-					echo("<p>Hospital name:".$json_file[$arval]['name']."</p>");
-					echo("<p>vaccine name:".$json_file[$arval]['vaccine_used']."</p>");
-					echo("<p>vaccine price: Rs.".$json_file[$arval]['price']."</p>");
+					echo("<p>Hospital Name:".$json_file[$arval]['name']."</p>");
+					echo("<p>Vaccine Name:".$json_file[$arval]['vaccine_used']."</p>");
+					echo("<p>Vaccine Price: Rs.".$json_file[$arval]['price']."</p>");
 					?>
 					<p id="demo"></p>
 					<form action="track.php" method="post">
