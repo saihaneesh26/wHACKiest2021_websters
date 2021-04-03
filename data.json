@@ -5,5 +5,6 @@
 	{"name":"Narayana Hrudayalaya karnataka","vaccine_used":"A","price":"500","lat":"12.891935","lon":"77.5762003"},
 	{"name":"M S Kerudi Hospital And Research Centre Bagalkot karnataka ","vaccine_used":"C","price":"900","lat":"16.1743623","lon":"75.6859276"},
 	{"name":"M S Ramaiah Hospital banglore karnataka","vaccine_used":"B","price":"700","lat":"13.0270858","lon":"77.5695515"},
-	{"name":"M S Ramaiah Narayana Heart Centre karnataka","vaccine_used":"A","price":"400","lat":"13.0298194","lon":"77.5615454"}
+	{"name":"M S Ramaiah Narayana Heart Centre karnataka","vaccine_used":"A","price":"400","lat":"13.0298194","lon":"77.5615454"},
+	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"200","lat":"12.8962841","lon":"77.5962331"}
 ]
