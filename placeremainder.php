@@ -50,17 +50,17 @@ else{
 
 					 ?>					
 					<div class="form-group">
-                        <label for="name" style="color:coral;margin-left: 50%;margin-right: 50%;">Name</label>
+                        <label for="name" style="color:coral;">Name:</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-                        <label for="email"style="color:coral;margin-left: 50%;margin-right: 50%;">Email</label>
+                        <label for="email"style="color:coral;">Email:</label>
                         <input type="text" class="form-control" name="email" id="email" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-  						<label for="date" style="color:coral;margin-left: 50%;margin-right: 50%;">Date</label>
+  						<label for="date" style="color:coral;">Date:</label>
     					<input class="form-control" type="date" value="2010-10-07" name="date" id="date" style="height:30px margin-block: 1rem;">
 					</div>
 
