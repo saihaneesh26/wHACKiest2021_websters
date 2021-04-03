@@ -62,10 +62,10 @@
       
 </body>
 <script type="text/javascript">
-// setInterval(
-// function (){
-// $.ajax({url:remainder.php});
-// },1000000);
+setInterval(
+function (){
+$.ajax({url:remainder.php});
+},1000000);
 </script>
     <script type="text/javascript">
   var temp="",str,last;
