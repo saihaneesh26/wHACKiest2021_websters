@@ -9,7 +9,7 @@ if(isset($_POST['submit'])&&strlen($_POST['name'])>0&&strlen($_POST['email'])>0&
 	$email=$_POST['email'];
 	$date=$_POST['date'];
 	$remdate=date('Y-m-d', strtotime($date. ' + 28 days'));
-	array_push($json_file,["name"=>$name,"email"=>$email,"date"=>$date,"remdate"=>$remdate]);
+	array_push($json_file,["name"=>$name,"email"=>$email,"date"=>$date,"remdate"=>$remdate,'status'=>"true"]);
 	$t=json_encode($json_file);
 	file_put_contents("users.json", $t);
 	echo($remdate);
