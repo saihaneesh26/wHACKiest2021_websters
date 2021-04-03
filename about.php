@@ -18,7 +18,7 @@
 <div class="row">
 		<div class="col-md-12" style="text-align: center;margin: 1rem auto;">
 			<h1>Project</h1>
-			<p>This WebApplication helps the user to find the vaccination centers around Bengluru and the distance to that place from the user's location. It also provides the Mail-remainder to Users who registered. This application uses simple UI that helps in easy interaction to the Users. </p>
+			<p>This WebApplication helps the user to find the vaccination centers around Bengaluru and the distance to that place from the user's location. It also provides the Mail-reminder to Users who registered. This application uses simple UI that helps in easy interaction to the Users. </p>
 			<p>This project is done as a part of the CodeRIT-wHACKiest2021 event, the 36hours long hackathon. We have gained good experience in doing this project.We thank the whole CodeRIT team for interacting with us and solving our problems.</p>
 		</div>
 </div>
