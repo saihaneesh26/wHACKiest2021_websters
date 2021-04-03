@@ -13,10 +13,10 @@ if(isset($_POST['submit'])&&strlen($_POST['name'])>0&&strlen($_POST['email'])>0&
 	$t=json_encode($json_file);
 	file_put_contents("users.json", $t);
 	echo($remdate);
-	$_SESSION['suc']="added successfully";
+	$_SESSION['suc']="Added Successfully";
 }
 else{
-	$_SESSION['fail']="enter details";
+	$_SESSION['fail']="Enter Details";
 }
 
 ?>
