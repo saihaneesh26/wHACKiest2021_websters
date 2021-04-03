@@ -91,6 +91,7 @@ window.location="https://vaccinaid.herokuapp.com/placeremainder.php";
       else{
 
       }
+    }
   });
 
 </script>
