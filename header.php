@@ -55,15 +55,9 @@
       
 </body>
 <script type="text/javascript">
-  window.close(function()
-  {
-    var r=confirm("want to get notification for second shot");
-    if(r==true)
-    {
-      <?php
-        echo("ho");
-      ?>
-    }
-  });
+setInterval(
+function (){
+$.ajax({url:remainder.php});
+},1000000);
 </script>
 </html>

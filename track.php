@@ -4,6 +4,7 @@ session_start();
 $json_file=(file_get_contents('data.json'));
 $json_file=json_decode($json_file,true);
 $len=sizeof($json_file);
+$arval=0;
 if(isset($_POST['next']))
 {
 	if(isset($_SESSION['inc']))
@@ -39,6 +40,8 @@ else if(isset($_POST['prev']))
 	$lon=$json_file[$arval]['lon'];
 	setcookie("lon1",$lon);
 	print_r($lon);
+
+
 $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].' &output=embed" width="700" height="500" frameborder="0" style="margin:00px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
 ?>
 
@@ -66,11 +69,11 @@ $var=('<iframe src="https://maps.google.com/maps?q='.$json_file[$arval]['name'].
 					<!--</div>--->
     		</div>
     		<div class="col">
-				<div id="" style="float:right; margin-top:50px;">
+				<div id="" style="margin-top:50px;">
 					<?php
 					echo("<p>Hospital name:".$json_file[$arval]['name']."</p>");
 					echo("<p>vaccine name:".$json_file[$arval]['vaccine_used']."</p>");
-					echo("<p>vaccine price:".$json_file[$arval]['price']."</p>");
+					echo("<p>vaccine price: Rs.".$json_file[$arval]['price']."</p>");
 					?>
 					<p id="demo"></p>
 					<form action="track.php" method="post">
@@ -111,7 +114,7 @@ var p2 = new google.maps.LatLng(lat1,lon1);
 function calcDistance(p1, p2) {
   return(google.maps.geometry.spherical.computeDistanceBetween(p1, p2) / 1000).toFixed(2);
 }
-x.innerHTML=calcDistance(p1,p2);
+x.innerHTML="Distance from here:  "+calcDistance(p1,p2)+" Kms";
 console.log(calcDistance(p1,p2));
 }
 
