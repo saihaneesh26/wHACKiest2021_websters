@@ -55,31 +55,31 @@ else{
 						}
 					 ?>
 					<div class="form-group">
-                        <label for="name" style="color:coral">Name of hospital</label>
+                        <label for="name" style="color:coral">Name Of Hospital:</label>
                         <input type="text" class="form-control" name="name" id="name" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-                        <label for="vaccine_used"style="color:coral">vaccine name</label>
+                        <label for="vaccine_used"style="color:coral">Vaccine Name:</label>
                         <input type="text" class="form-control" name="vaccine_used" id="email" style="height:30px margin-block: 1rem;">
                     </div>
 					
 					<div class="form-group">
-  						<label for="price" style="color:coral">price of vaccine</label>
+  						<label for="price" style="color:coral">Price Of Vaccine:</label>
     					<input class="form-control" type="text"  name="price" id="price" style="height:30px margin-block: 1rem;">
 					</div>
 					<div class="form-group">
-  						<label for="lat" style="color:coral">latitiude</label>
+  						<label for="lat" style="color:coral">Latitiude:</label>
     					<input class="form-control" type="text"  name="lat" style="height:30px margin-block: 1rem;">
 					</div>
 					<div class="form-group">
-  						<label for="lon" style="color:coral">longitude</label>
+  						<label for="lon" style="color:coral">Longitude:</label>
     					<input class="form-control" type="text"  name="lon"style="height:30px margin-block: 1rem;">
 					</div>
 
 					<div class="row">
                         <div class="col-6" style="margin: 1rem auto;display: block;text-align: center;">
-                            <input class="btn btn-primary" type="submit" name="add">
+                            <input class="btn btn-primary" type="submit" name="Add">
                         </div>
                     </div>
 
