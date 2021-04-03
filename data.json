@@ -1,10 +1,10 @@
 [
-	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"100","lat":"17.4122998","lon":"78.2679585"},
-	{"name":"Dhanush Hospital karnataka","vaccine_used":"B","price":"200"},
-	{"name":"KIMS Hospital & Research Centre karnataka","vaccine_used":"C","price":"300"},
-	{"name":"Mallya Hospital karnataka","vaccine_used":"A","price":"400"},
-	{"name":"Narayana Hrudayalaya karnataka","vaccine_used":"A","price":"500"},
-	{"name":"M S Kerudi Hospital And Research Centre Bagalkot karnataka ","vaccine_used":"C","price":"900"},
-	{"name":"M S Ramaiah Hospital banglore karnataka","vaccine_used":"B","price":"700"},
-	{"name":"M S Ramaiah Narayana Heart Centre karnataka","vaccine_used":"A","price":"400"}
+	{"name":"Imperial Hospital and Research Centre (Apollo) karnataka","vaccine_used":"A","price":"100","lat":"12.8962841","lon":"77.5962331"},
+	{"name":"Dhanush Hospital karnataka","vaccine_used":"B","price":"200","lat":"12.9654665","lon":"77.5209927"},
+	{"name":"KIMS Hospital & Research Centre karnataka","vaccine_used":"C","price":"300","lat":"12.9565106","lon":"77.572951"},
+	{"name":"Mallya Hospital karnataka","vaccine_used":"A","price":"400","lat":"12.968064","lon":"77.592879"},
+	{"name":"Narayana Hrudayalaya karnataka","vaccine_used":"A","price":"500","lat":"12.891935","lon":"77.5762003"},
+	{"name":"M S Kerudi Hospital And Research Centre Bagalkot karnataka ","vaccine_used":"C","price":"900","lat":"16.1743623","lon":"75.6859276"},
+	{"name":"M S Ramaiah Hospital banglore karnataka","vaccine_used":"B","price":"700","lat":"13.0270858","lon":"77.5695515"},
+	{"name":"M S Ramaiah Narayana Heart Centre karnataka","vaccine_used":"A","price":"400","lat":"13.0298194","lon":"77.5615454"}
 ]
