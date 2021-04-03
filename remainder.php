@@ -20,7 +20,7 @@ foreach($json as $row)
 		//mail($email,$subject,$message,$headers);
 		unset($json[$i]);
 		file_put_contents('users.json', $json);
-		echo("done");
+		echo("Done");
 	}
 	$i+=1;
 }
