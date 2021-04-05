@@ -17,7 +17,7 @@ foreach($json as $row)
 		  'Reply-To: mail' . "\r\n" . 
 		  'X-Mailer: PHP/' . phpversion();
 		$message= "remainder for the second dose of vaccination";
-		//mail($email,$subject,$message,$headers);
+		mail($email,$subject,$message,$headers);
 		unset($json[$i]);
 		file_put_contents('users.json', $json);
 		echo("Done");
