@@ -13,8 +13,8 @@ foreach($json as $row)
 	{
 		$email=$row['email'];
 		$subject="remainder";
-		$headers = 'From: designprjct19@gmail.com' . "\r\n". 
-		  'Reply-To: designprjct19@gmail.com' . "\r\n" . 
+		$headers = 'From: mail' . "\r\n". 
+		  'Reply-To: mail' . "\r\n" . 
 		  'X-Mailer: PHP/' . phpversion();
 		$message= "remainder for the second dose of vaccination";
 		//mail($email,$subject,$message,$headers);
@@ -27,15 +27,6 @@ foreach($json as $row)
 $j=file_get_contents('users.json');
 $json=json_decode($j,true);
 print_r($json);
-
-// $email="designprjct19@gmail.com";
-// $subject="remainder";
-// $headers = 'From: designprjct19@gmail.com' . "\r\n". 
-//   'Reply-To: designprjct19@gmail.com' . "\r\n" . 
-//   'X-Mailer: PHP/' . phpversion();
-// $message= "jeo";
-// mail($email,$subject,$message,$headers);
-// echo("done");
 ?>
 <!DOCTYPE html>
 <html>
