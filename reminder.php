@@ -1,5 +1,5 @@
 <?php
-//ini_set('display_errors',0);
+ini_set('display_errors',0);
 // //include "pdo.php";
 $j=file_get_contents('users.json');
 $json=json_decode($j,true);
