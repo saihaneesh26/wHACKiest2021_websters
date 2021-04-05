@@ -33,7 +33,7 @@ else{
 			<div class="col-12" style="text-align: center;margin: 1rem auto;border:20px solid skyblue;padding:2px;">
 				<h4 style="padding-bottom:10px;">Wanna Get A Reminder after 28 days for second dose!!
 				Fill The Form</h4>
-				<form class="form" method="POST" action="placeremainder.php">
+				<form class="form" method="POST" action="placereminder.php">
 					
 					<?php
 						if(isset($_SESSION['fail']))
