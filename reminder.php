@@ -13,8 +13,8 @@ foreach($json as $row)
 	{
 		$email=$row['email'];
 		$subject="remainder";
-		$headers = 'From: mail' . "\r\n". 
-		  'Reply-To: mail' . "\r\n" . 
+		$headers = 'From: designprjct19@gmail.com' . "\r\n". 
+		  'Reply-To: designprjct19@gmail.com' . "\r\n" . 
 		  'X-Mailer: PHP/' . phpversion();
 		$message= "remainder for the second dose of vaccination";
 		mail($email,$subject,$message,$headers);
